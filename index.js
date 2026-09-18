@@ -102,6 +102,10 @@ export function isMultiple35(n) {
  */
 export function shareLastDigit(num1, num2) {
   /* TODO */
+  if (num1 % 10 === num2 %10) {
+    return true;
+  }
+  return false;
 }
 
 /**
