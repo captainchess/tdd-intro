@@ -13,6 +13,10 @@
  */
 export function sumDouble(num1, num2) {
   /* TODO */
+  if (num1 === num2) {
+    return 2 * (num1 + num2);
+  }
+  return num1 + num2;
 }
 
 /**
@@ -29,6 +33,13 @@ export function sumDouble(num1, num2) {
  */
 export function makes10(num1, num2) {
   /* TODO */
+  if (num1 === 10 || num2 === 10) {
+    return true;
+  } else if ((num1 + num2) === 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -47,6 +58,8 @@ export function makes10(num1, num2) {
  */
 export function near100(n, distance) {
   /* TODO */
+  const num = Math.abs(n - 100);
+  console.log(num);
 }
 
 /**
