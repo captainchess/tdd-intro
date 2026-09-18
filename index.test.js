@@ -260,7 +260,7 @@ describe("canEnterClub", function () {
   });
 });
 
-describe.only("shouldAnswerPhone", function () {
+describe("shouldAnswerPhone", function () {
   it("answers when not morning and not asleep, any caller", function () {
     expect(shouldAnswerPhone(false, false, false)).toBe(true);
     expect(shouldAnswerPhone(false, true, false)).toBe(true);
