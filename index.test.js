@@ -203,7 +203,7 @@ describe("makeABBA", function () {
   });
 });
 
-describe.only("makeSLS", function () {
+describe("makeSLS", function () {
   it("puts shorter first string outside when first is shorter", function () {
     expect(makeSLS("Hi", "Hello")).toBe("HiHelloHi");
     expect(makeSLS("a", "abc")).toBe("aabca");
@@ -260,7 +260,7 @@ describe("canEnterClub", function () {
   });
 });
 
-describe("shouldAnswerPhone", function () {
+describe.only("shouldAnswerPhone", function () {
   it("answers when not morning and not asleep, any caller", function () {
     expect(shouldAnswerPhone(false, false, false)).toBe(true);
     expect(shouldAnswerPhone(false, true, false)).toBe(true);
